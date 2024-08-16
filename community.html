@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Contributions - Heritage AR</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ar-experience.html">AR Experience</a></li>
+                <li><a href="storytelling.html">Storytelling</a></li>
+                <li><a href="community.html">Community Contributions</a></li>
+                <li><a href="gamification.html">Gamification</a></li>
+                <li><a href="learning.html">Interactive Learning</a></li>
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Community Contributions</h1>
+        <p>Share your stories and knowledge about local heritage sites.</p>
+        <form id="story-submission" onsubmit="submitStory(event)">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <input type="story" id="story" placeholder="Your Story" required></textarea>
+            <button type="submit">Submit Story</button>
+        </form>
+        <div id="submission-response"></div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Heritage AR</p>
+    </footer>
+</body>
+</html>

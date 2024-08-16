@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Learning - Heritage AR</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ar-experience.html">AR Experience</a></li>
+                <li><a href="storytelling.html">Storytelling</a></li>
+                <li><a href="community.html">Community Contributions</a></li>
+                <li><a href="gamification.html">Gamification</a></li>
+                <li><a href="learning.html">Interactive Learning</a></li>
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Interactive Learning Tools</h1>
+        <p>Engage with our educational tools to learn more about cultural heritage.</p>
+
+        <h2>Quiz Questions</h2>
+        <div id="quiz">
+            <div class="quiz-question">
+                <p>1. What is the capital of ancient Rome?</p>
+                <button onclick="checkAnswer('wrong')">Athens</button>
+                <button onclick="checkAnswer('correct')">Rome</button>
+                <button onclick="checkAnswer('wrong')">Carthage</button>
+            </div>
+            <div class="quiz-question">
+                <p>2. Which artifact is known as the "Rosetta Stone"?</p>
+                <button onclick="checkAnswer('wrong')">A famous painting</button>
+                <button onclick="checkAnswer('correct')">An ancient Egyptian artifact</button>
+                <button onclick="checkAnswer('wrong')">A sculpture</button>
+            </div>
+            <div class="quiz-question">
+                <p>3. Which structure is one of the Seven Wonders of the Ancient World?</p>
+                <button onclick="checkAnswer('wrong')">Colosseum</button>
+                <button onclick="checkAnswer('correct')">Great Pyramid of Giza</button>
+                <button onclick="checkAnswer('wrong')">Hanging Gardens</button>
+            </div>
+            <div class="quiz-question">
+                <p>4. The Great Wall of China was built primarily for what purpose?</p>
+                <button onclick="checkAnswer('correct')">Protection from invasions</button>
+                <button onclick="checkAnswer('wrong')">Trade routes</button>
+                <button onclick="checkAnswer('wrong')">Agriculture</button>
+            </div>
+            <div class="quiz-question">
+                <p>5. Which civilization is known for its pyramids?</p>
+                <button onclick="checkAnswer('wrong')">Mesoamerican</button>
+                <button onclick="checkAnswer('wrong')">Roman</button>
+                <button onclick="checkAnswer('correct')">Egyptian</button>
+            </div>
+        </div>
+
+        <div id="quiz-result"></div>
+
+        <h2>Mini-Game: Memory Match</h2>
+        <div id="memory-game" class="memory-game">
+            <div class="memory-card" data-card="1">
+                <img src="artifact1.jpg" alt="Artifact 1" class="card-image">
+            </div>
+            <div class="memory-card" data-card="1">
+                <img src="artifact1.jpg" alt="Artifact 1" class="card-image">
+            </div>
+            <div class="memory-card" data-card="2">
+                <img src="artifact2.jpg" alt="Artifact 2" class="card-image">
+            </div>
+            <div class="memory-card" data-card="2">
+                <img src="artifact2.jpg" alt="Artifact 2" class="card-image">
+            </div>
+            <div class="memory-card" data-card="3">
+                <img src="artifact3.jpg" alt="Artifact 3" class="card-image">
+            </div>
+            <div class="memory-card" data-card="3">
+                <img src="artifact3.jpg" alt="Artifact 3" class="card-image">
+            </div>
+            <div class="memory-card" data-card="4">
+                <img src="artifact4.jpg" alt="Artifact 4" class="card-image">
+            </div>
+            <div class="memory-card" data-card="4">
+                <img src="artifact4.jpg" alt="Artifact 4" class="card-image">
+            </div>
+        </div>
+        <button id="restart-button">Restart Game</button>
+    </main>
+    <footer>
+        <p>&copy; 2024 Heritage AR</p>
+    </footer>
+</body>
+</html>

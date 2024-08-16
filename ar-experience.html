@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR Experience - Heritage AR</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ar-experience.html">AR Experience</a></li>
+                <li><a href="storytelling.html">Storytelling</a></li>
+                <li><a href="community.html">Community Contributions</a></li>
+                <li><a href="gamification.html">Gamification</a></li>
+                <li><a href="learning.html">Interactive Learning</a></li>
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Augmented Reality Experience</h1>
+        <p>Scan the QR code or use your camera to access immersive AR content at cultural sites.</p>
+        <div id="ar-content">
+            <h2>How It Works</h2>
+            <ol>
+                <li>Point your device at the QR code located at the heritage site.</li>
+                <li>Experience 3D models, animations, and stories about the site.</li>
+                <li>Engage with the content by interacting with it through your device.</li>
+            </ol>
+        </div>
+        <div id="ar-examples">
+            <h2>Examples of AR Experiences</h2>
+            <ul>
+                <li>3D Models of Historical Figures</li>
+                <li>Interactive Historical Reenactments</li>
+                <li>Augmented Narratives with Audio</li>
+            </ul>
+        </div>
+        <button id="start-ar-btn">Start AR Experience</button>
+
+        <div style="width: 100%; height: 600px;">
+            <a-scene embedded arjs>
+                <a-marker preset="hiro">
+                    <a-entity geometry="primitive: box; height: 1; width: 1; depth: 1" material="color: blue"></a-entity>
+                </a-marker>
+                <a-entity camera></a-entity>
+            </a-scene>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Heritage AR</p>
+    </footer>
+</body>
+</html>
